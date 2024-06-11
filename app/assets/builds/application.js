@@ -34505,7 +34505,7 @@ var RoomList = () => {
   const [rooms, setRooms] = (0, import_react2.useState)([]);
   console.log(rooms);
   (0, import_react2.useEffect)(() => {
-    axios_default.get("http://localhost:3000/api/v1/rooms").then((response) => {
+    axios_default.get("https://chatroom-thoriqas.onrender.com/api/v1/rooms").then((response) => {
       setRooms(response.data);
     }).catch((error2) => {
       console.error("There was an error fetching the rooms!", error2);
@@ -34548,7 +34548,7 @@ var MessageList = ({ roomId }) => {
   const fetchMessages = async () => {
     try {
       const response = await axios_default.get(
-        `http://localhost:3000/api/v1/rooms/${roomId}/messages`
+        `https://chatroom-thoriqas.onrender.com/api/v1/rooms/${roomId}/messages`
       );
       setMessages(response.data);
     } catch (error2) {
@@ -34559,7 +34559,7 @@ var MessageList = ({ roomId }) => {
     event.preventDefault();
     try {
       const response = await axios_default.post(
-        `http://localhost:3000/api/v1/rooms/${roomId}/messages`,
+        `https://chatroom-thoriqas.onrender.com/api/v1/rooms/${roomId}/messages`,
         {
           message: { body: newMessage }
         }

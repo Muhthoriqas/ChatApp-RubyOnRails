@@ -11,7 +11,7 @@ const RoomList: React.FC = () => {
   console.log(rooms);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/rooms")
+      .get("https://chatroom-thoriqas.onrender.com/api/v1/rooms")
       .then((response) => {
         setRooms(response.data);
       })
