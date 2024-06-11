@@ -22,7 +22,7 @@ const MessageList: React.FC<MessageListProps> = ({ roomId }) => {
   const fetchMessages = async () => {
     try {
       const response = await axios.get(
-        `https://chatroom-thoriqas.onrender.com/api/v1/rooms/${roomId}/messages`,
+        `http://localhost:3000/api/v1/rooms/${roomId}/messages`,
       );
       setMessages(response.data);
     } catch (error) {
@@ -34,7 +34,7 @@ const MessageList: React.FC<MessageListProps> = ({ roomId }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `https://chatroom-thoriqas.onrender.com/api/v1/rooms/${roomId}/messages`,
+        `http://localhost:3000/api/v1/rooms/${roomId}/messages`,
         {
           message: { body: newMessage },
         },
