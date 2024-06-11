@@ -2,6 +2,10 @@
 
 Welcome to **ChatRoom**! This guide will help you get started with setting up and running the application on your local machine. 🚀
 
+## Live Demo
+
+Deployed Link: https://chatroom-thoriqas.onrender.com
+
 ## Prerequisites 📋
 
 Before you begin, ensure you have the following installed on your machine:
