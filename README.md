@@ -37,7 +37,6 @@ yarn install
 Set up the database by running the following commands:
 
 ```
-Salin kode
 rails db:create
 rails db:migrate
 rails db:seed
